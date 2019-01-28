@@ -1,0 +1,18 @@
+version: 0.1
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    # adding dev branch
+    preBuild:
+      commands:
+        - ls -l
+    build:
+      commands: 
+        - ls -l
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
